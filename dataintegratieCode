@@ -1,0 +1,26 @@
+#!/usr/bin/env bash                                                                                                                                                                    
+# Give in file path                                                                                                                                                                    
+file="$1"
+
+# Check if the file extention is .gz                                                                                                                                                   
+if [[ $file =~ \.gz$ ]]; then
+    # If .gz file use zcat to temporary unzip the file and use grep to take out the chr21                                                                                              
+    zcat "$file" | grep -w '^#\|^#CHROM\|^chr21' > "$file".chr21.vcf
+    # Use the snEff command to annotate the file                                                                                                                                       
+    java -jar snpEff.jar GRCh37.75 -no-downstream -no-intergenic -no-intron -no-upstream -no-utr -verbose "$file".chr21.vcf > "$file".chr21.ann.vcf
+    # grep the first 10 missense and frameshift variants                                                                                                                               
+    grep -m10 "missense_variant" "$file".chr21.ann.vcf > "$file".missense.vcf
+    grep -m10 "frameshift_variant" "$file".chr21.ann.vcf > "$file".frameshift.vcf
+
+else
+    # If not a .gz file use grep to take out the chr21                                                                                                                                 
+    grep -w '^#\|^#CHROM\|^chr21' "$file" > "$file".chr21.vcf
+    # Use the snEff command to annotate the file                                                                                                                                       
+    java -jar snpEff.jar GRCh37.75 -no-downstream -no-intergenic -no-intron -no-upstream -no-utr -verbose "$file".chr21.vcf > "$file".chr21.ann.vcf
+    # grep the first 10 missense and frameshift variants                                                                                                                               
+    grep -m10 "missense_variant" "$file".chr21.ann.vcf > "$file".missense.vcf
+    grep -m10 "frameshift_variant" "$file".chr21.ann.vcf > "$file".frameshift.vcf
+
+fi
+
+
