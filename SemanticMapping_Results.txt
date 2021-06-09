@@ -1,0 +1,3 @@
+['PGPC-19', ['1949', '7'], '8507', 'M', '8527', 'White', 'not_found', 'Kidney stones (55 y)']
+['PGPC-29', ['1984', '5'], '8507', 'M', '8527', 'White', 'not_found', 'ADHD', 'not_found', 'Elongated uvula']
+['PGPC-9', ['1940', '12'], '8507', 'M', '8527', 'White', 'not_found', 'Osteoporotic compression fracture', '4028363', 'Uveitis', '198177', 'Abdominal aortic aneurysm', '199074', 'Acute pancreatitis', '4300118', 'Squamous cell carcinoma']
