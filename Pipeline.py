@@ -1,4 +1,4 @@
-# Author: Harm Laurense
+# Author: Harm Laurense, Johannes Schönthaler & Sanne Post
 # Last changed: 08-06-2021
 # Pipeline: Extracts information from participant PDF files, searches for
 # corresponding concept IDs and adds it to the database.
