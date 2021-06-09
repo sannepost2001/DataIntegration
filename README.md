@@ -2,7 +2,11 @@
 
 ### Usage dataintegratieCode script:
 This code is used to extract the data outof the .vcf and the .vcf.gz files. 
-First it extracts the Chromosome 21, than it annotates that chromosoom and lastly it extracts the first 10 missense and frame shift variants
+First it extracts the Chromosome 21, than it annotates that chromosome and lastly it extracts the first 10 missense and frame shift variants
+To use the script u call it like this:
+First the location of the script and the location of the file. The script needs to be run in the file of the snpEFF
+home/user/dataintegratieCode /home/user/1503AHX-0002_PGPC-0029-241086-M_SNP_INDEL.vcf
+
 
 ### Direct_data:
 Opens the file generated earlier, and sends the data to tables in the database.
