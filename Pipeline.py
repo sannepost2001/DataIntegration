@@ -1,5 +1,5 @@
 # Author: Harm Laurense, Johannes Schönthaler & Sanne Post
-# Last changed: 08-06-2021
+# Last changed: 09-06-2021
 # Pipeline: Extracts information from participant PDF files, searches for
 # corresponding concept IDs and adds it to the database.
 # Notes: This script assumes the correct directories are given and all
