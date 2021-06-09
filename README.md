@@ -12,7 +12,7 @@ home/user/dataintegratieCode /home/user/1503AHX-0002_PGPC-0029-241086-M_SNP_INDE
 This pipeline is used for extracting information from participant data, retrieving corresponding concept ids and placing them into the database. <br>
 A few files and changes to workdirectory aren needed to run this script. Most files are found in the metadata folder.
 - Data collected from: https://personalgenomes.ca/data
-- Vocabulary files collected from Athena: https://athena.ohdsi.org/
+- Vocabulary files collected from Athena: https://athena.ohdsi.org/ <br>
 *Only the "CONCEPT.csv" and "CONCEPT_SYNONYM.csv" was used 
 
 Temporary link for the concept files: https://we.tl/t-OM4nuxZRwD
